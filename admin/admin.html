@@ -39,7 +39,7 @@
 
 <script>
   function greeting() {
-    fetch('/api/')
+    fetch('/api/greeting')
       .then(response => response.json())
       .then(data => console.log(data));
   }
