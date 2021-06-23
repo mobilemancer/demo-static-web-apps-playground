@@ -32,14 +32,14 @@
 <body>
   <h1>Admin Page</h1>
   <p>Welcome 😃</p>
-  <button onclick="greeting()"></button>
+  <button onclick="greeting()">Hello?</button>
 </body>
 
 </html>
 
 <script>
   function greeting() {
-    fetch('/')
+    fetch('/api/')
       .then(response => response.json())
       .then(data => console.log(data));
   }
